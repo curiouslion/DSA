@@ -8,7 +8,7 @@ struct Array
     int size;
 };
 
-struct Array *intersection(struct Array *arr1, struct Array *arr2)
+struct Array *Difference(struct Array *arr1, struct Array *arr2)
 {
 
     struct Array *arr3 = (struct Array *)malloc(sizeof(struct Array));
@@ -54,7 +54,7 @@ int main()
     struct Array arr2 = {{55, 77, 89, 90, 100}, 5, 10};
 
     struct Array *arr3;
-    arr3 = intersection(&arr1, &arr2);
+    arr3 = Difference(&arr1, &arr2);
 
     Display(*arr3);
 
